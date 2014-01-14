@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="Настройки артериального давления">
+        <ListPreference android:title="Тип  давления" 
+                        android:key="davlenie" 
+                        android:dialogTitle="Выберите тип" 
+                        android:summary="Выберите параметр измерения давления" 
+                        android:entryValues="@array/text_style" 
+                        android:entries="@array/text_style"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Настройки сахара">
+        <CheckBoxPreference android:key="mm" 
+                            android:title="ммоль/л"/>
+        <CheckBoxPreference android:key="mg" 
+                            android:title="мг%"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Настройки пульса">
+        <CheckBoxPreference android:key="puls" 
+                            android:summary="Изменить на ударов в секунду" 
+                            android:title="Пульс"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Параметры веса"></PreferenceCategory>
+        <PreferenceScreen android:key="wei" 
+                          android:title="Параметры веса">
+            <CheckBoxPreference android:key="weis" 
+                                android:title="Единицы измерения "
+                                android:summary="Изменить на фунты"/>
+        </PreferenceScreen>
+
+</PreferenceScreen>
